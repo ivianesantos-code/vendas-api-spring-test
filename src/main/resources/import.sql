@@ -74,6 +74,10 @@ insert into produto(descricao, preco, estoque) values ('Teclado', 200.00, 50);
 -- Produto sem estoque
 insert into produto(descricao, preco, estoque) values ('Mouse', 150.00, 0);
 
+
+-- Produto sem estoque
+insert into produto(descricao, preco, estoque) values ('Mouse', 150.00, 0);
+
 insert into venda (cliente_id, data_hora, status, logradouro, cep, cidade, uf) values (1, '2025-02-23', 'ENTREGUE', 'Rua 1', '77999000', 'Palmas', 'TO');
     insert into item_venda (venda_id, produto_id, quant) values (1, 1, 2);
     insert into item_venda (venda_id, produto_id, quant) values (1, 3, 4);

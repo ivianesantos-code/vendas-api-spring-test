@@ -7,5 +7,8 @@ import java.util.List;
 
 @Repository
 public interface ProdutoRepository extends EntityRepository<Produto> {
+    List<Produto> findByDescricao(String descricao);
+    Produto findByPrecoAfter(double preco);
+
     List<Produto> findByDescricaoLike(String descricao);
 }
